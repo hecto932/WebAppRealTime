@@ -1,0 +1,147 @@
+body
+{
+	background: url(/img/bg.png);
+	font-size: 16px;
+	text-align: center;
+}
+label 
+{
+	font-size: 2em;
+}
+h1
+{
+	color: #b3b3b3;
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 5em;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+	width: 100%;
+}
+nav
+{
+	background: url(/img/bg.png);
+	bottom: 0px;
+	box-shadow: 0px 0px 1.2em rgba(0,0,0,0.1);
+	left: 0px;
+	position: fixed;
+	width: 100%;
+}
+#user
+{
+	width: 15em;
+}
+#submit
+{
+	display: none;
+}
+#all, #incomplete, #complete
+{
+	background: white;
+	border-radius: 0.8em;
+	border: 1px solid #d2d3d4;
+	box-shadow: 0px 0px 10px #d2d3d4;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	margin: 1em 2em 0.8em 2em;
+	padding: 0.5em 0em;
+	vertical-align: middle;
+	width: 188px;
+}
+#Tasks
+{
+	margin-bottom: 55px;
+}
+.write
+{
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2em;
+	margin-left: 14px;
+	margin-top: 24px;
+	padding: 0 0.7em 0 0;
+	vertical-align: middle;
+}
+.TaskIncomplete, .TaskComplete
+{
+	padding: 1em 0;
+}
+.TaskComplete .IndTask .Task 
+{
+	text-decoration: line-through;
+}
+.highlight
+{
+	color: green;
+	cursor: pointer;
+	margin-top: -1px;
+	opacity: 0.3;
+	padding: 0.5em;
+	text-shadow: 0px 0px 7px rgba(0,255,0,0.5);
+	vertical-align: middle;
+}
+.highlighted .highlight 
+{
+	opacity: 0.8;
+}
+.IndTask
+{
+	background: white;
+	border-radius: 1em;
+	border: 1px solid #d1d2d3;
+	box-shadow: 0px 0px 1em rgba(0,0,0,0.2);
+	margin: auto auto 0.8em auto;
+	width: 725px;
+}
+.inputext
+{
+	border-radius: 0.4em;
+	border: 1px solid #d1d2d3;
+	box-shadow: inset 0px 0px 12px #d1d2d3;
+	font-size: 1em;
+	height: 2.5em;
+	padding: 0 1em;
+	width: 25em;
+}
+.Task
+{
+	border-left: 1px solid #d1d2d3;
+	display: inline-block;
+	height: auto;
+	padding: 0px 3em;
+	text-align: left;
+	vertical-align: middle;
+	width: 500px;
+	word-break: break-word;
+}
+.Task p
+{
+	margin: 0.6em 0 1em 0;
+}
+.Task h3
+{
+	margin: 1em 0 0 0;
+	text-transform: capitalize;
+}
+.remove
+{
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	color: red;
+	cursor: pointer;
+	margin-left:-1px;
+	opacity: 0;
+	padding: 0.5em;
+	text-shadow: 0px 0px 0.5em rgba(255,0,0,0.8);
+	transition: all .3s ease;
+	vertical-align: middle;
+}
+.IndTask:hover .remove
+{
+	opacity: 0.8 !important;
+}
